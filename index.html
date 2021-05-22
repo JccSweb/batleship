@@ -6,83 +6,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Battleship</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div id="board">
-        <div id="messageArea"></div>
-        <table>
-            <tr>
-                <td id="00"></td>
-                <td id="01"></td>
-                <td id="02"></td>
-                <td id="03"></td>
-                <td id="04"></td>
-                <td id="05"></td>
-                <td id="06"></td>
-            </tr>
-            <tr>
-                <td id="10"></td>
-                <td id="11"></td>
-                <td id="12"></td>
-                <td id="13"></td>
-                <td id="14"></td>
-                <td id="15"></td>
-                <td id="16"></td>
-            </tr>
-            <tr>
-                <td id="20"></td>
-                <td id="21"></td>
-                <td id="22"></td>
-                <td id="23"></td>
-                <td id="24"></td>
-                <td id="25"></td>
-                <td id="26"></td>
-            </tr>
-            <tr>
-                <td id="30"></td>
-                <td id="31"></td>
-                <td id="32"></td>
-                <td id="33"></td>
-                <td id="34"></td>
-                <td id="35"></td>
-                <td id="36"></td>
-            </tr>
-            <tr>
-                <td id="40"></td>
-                <td id="41"></td>
-                <td id="42"></td>
-                <td id="43"></td>
-                <td id="44"></td>
-                <td id="45"></td>
-                <td id="46"></td>
-            </tr>
-            <tr>
-                <td id="50"></td>
-                <td id="51"></td>
-                <td id="52"></td>
-                <td id="53"></td>
-                <td id="54"></td>
-                <td id="55"></td>
-                <td id="56"></td>
-            </tr>
-            <tr>
-                <td id="60"></td>
-                <td id="61"></td>
-                <td id="62"></td>
-                <td id="63"></td>
-                <td id="64"></td>
-                <td id="65"></td>
-                <td id="66"></td>
-            </tr>
-        </table>
+<div class="container">
+        <div id="board">
+            <div id="messageArea"></div>
+        </div>
+        <div class="grid">
+            <div class="no-border">A</div>
+            <div class="border" id="00"></div>
+            <div class="border" id="01"></div>
+            <div class="border" id="02"> </div>
+            <div class="border" id="03"></div>
+            <div class="border" id="04"></div>
+            <div class="border" id="05"></div>
+            <div class="border" id="06"></div>
+            <div class="no-border">B</div>
+            <div class="border" id="10"></div>
+            <div class="border" id="11"></div>
+            <div class="border" id="12"></div>
+            <div class="border" id="13"></div>
+            <div class="border" id="14"></div>
+            <div class="border" id="15"></div>
+            <div class="border" id="16"></div>
+            <div class="no-border">C</div>
+            <div class="border" id="20"></div>
+            <div class="border" id="21"></div>
+            <div class="border" id="22"></div>
+            <div class="border" id="23"></div>
+            <div class="border" id="24"></div>
+            <div class="border" id="25"></div>
+            <div class="border" id="26"></div>
+            <div class="no-border">D</div>
+            <div class="border" id="30"></div>
+            <div class="border" id="31"></div>
+            <div class="border" id="32"></div>
+            <div class="border" id="33"></div>
+            <div class="border" id="34"></div>
+            <div class="border" id="35"></div>
+            <div class="border" id="36"></div>
+            <div class="no-border">E</div>
+            <div class="border" id="40"></div>
+            <div class="border" id="41"></div>
+            <div class="border" id="42"></div>
+            <div class="border" id="43"></div>
+            <div class="border" id="44"></div>
+            <div class="border" id="45"></div>
+            <div class="border" id="46"></div>
+            <div class="no-border">F</div>
+            <div class="border" id="50"></div>
+            <div class="border" id="51"></div>
+            <div class="border" id="52"></div>
+            <div class="border" id="53"> </div>
+            <div class="border" id="54"></div>
+            <div class="border" id="55"></div>
+            <div class=" border" id="56"></div>
+            <div class="no-border">G</div>
+            <div class="border" id="60"></div>
+            <div class="border" id="61"></div>
+            <div class="border" id="62"></div>
+            <div class="border" id="63"></div>
+            <div class="border" id="64"></div>
+            <div class="border" id="65"></div>
+            <div class="border" id="66"></div>
+            <div class="no-border"></div>
+            <div class="no-border">0</div>
+            <div class="no-border">1</div>
+            <div class="no-border">2</div>
+            <div class="no-border">3</div>
+            <div class="no-border">4</div>
+            <div class="no-border">5</div>
+            <div class="no-border">6</div>
+        </div>
         <form>
             <input type="text" id="guessInput" placeholder="A0">
             <input type="button" id="fireButton" value="Fire!">
         </form>
     </div>
-    <script src="../js/batleship.js"></script>
+<script src="js/batleship.js"></script>
 </body>
 
 </html>

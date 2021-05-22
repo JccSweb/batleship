@@ -1,37 +1,13 @@
 body{
     background-color: black;
 }
-
-div#board{
-    position: relative;
-    width: 1024px;
-    height: 863px;
-    margin: auto;
-    background: url(../img/board.jpg) no-repeat;
-}
-
 div#messageArea {
     position: absolute;
     top: 0px;
     left: 0px;
     color: rgb(83, 175, 19);
 }
-
-table {
-    position: absolute;
-    left: 173px;
-    top: 98px;
-    border-spacing: 0px;
-}
-
-td {
-    width: 94px;
-    height: 94px;
-}
 form {
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
     padding: 15px;
     background-color: rgb(83, 175, 19);
 }
@@ -42,11 +18,53 @@ form input {
     font-size: 1em;
 }
 
-.hit {
-    background: url("../img/ship.png") no-repeat center center;
+/* new CSS */
+.container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(8, 80px);
+}
 
+.grid div {
+    height: 80px;
+}
+
+.border {
+    border: 2px solid #71991c;
+    background-color: #30480a;
+}
+
+.no-border {
+    color: #71991c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.hit {
+    background: url("../img/ship.png") no-repeat center center;
+    border: 2px solid #71991c;
+
+}
 .miss {
     background: url("../img/miss.png") no-repeat center center;
+    border: 2px solid #71991c;
+}
+@media screen and (max-width: 600px) {
+    .grid {
+        grid-template-columns: repeat(8, 45px);
     }
+
+    .grid div {
+        height: 45px;
+    }
+}
