@@ -1,21 +1,14 @@
 body{
     background-color: black;
+    overflow: hidden;
 }
 div#messageArea {
-    position: absolute;
-    top: 0px;
-    left: 0px;
     color: rgb(83, 175, 19);
-}
-form {
-    padding: 15px;
-    background-color: rgb(83, 175, 19);
-}
-
-form input {
-    background-color: rgb(152, 207, 113);
-    border-color: rgb(83, 175, 19);
-    font-size: 1em;
+    font-size: 25px;
+    font-weight: 900;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    text-align: center;
 }
 
 /* new CSS */
@@ -30,7 +23,7 @@ form input {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(8, 80px);
+    grid-template-columns: repeat(7, 80px);
 }
 
 .grid div {
@@ -53,20 +46,42 @@ form input {
 .hit {
     background: url("../img/ship.png") no-repeat center center;
     border: 2px solid #71991c;
-    background-size: auto;
+    background-size: 65px 30px;
 
 }
 .miss {
     background: url("../img/miss.png") no-repeat center center;
     border: 2px solid #71991c;
-    background-size: auto;
-}
+    background-size: 65px 30px;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    #restart {
+        background-color: #53af13;
+        color: black;
+        font-size: 25px;
+        border: none;
+        margin-bottom: 15px;
+        outline: none;
+        font-weight: 900;
+        padding: 6px;
+        padding-bottom: 2px;
+        padding-top: 2px;
+        border-radius: 5px;
+    }
 @media screen and (max-width: 600px) {
     .grid {
-        grid-template-columns: repeat(8, 45px);
+        grid-template-columns: repeat(7, 45px);
     }
 
     .grid div {
         height: 45px;
+    }
+    .miss,
+    .hit {
+        background-size: 40px 25px;
     }
 }
