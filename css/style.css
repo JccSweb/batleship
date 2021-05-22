@@ -53,11 +53,13 @@ form input {
 .hit {
     background: url("../img/ship.png") no-repeat center center;
     border: 2px solid #71991c;
+    background-size: auto;
 
 }
 .miss {
     background: url("../img/miss.png") no-repeat center center;
     border: 2px solid #71991c;
+    background-size: auto;
 }
 @media screen and (max-width: 600px) {
     .grid {
