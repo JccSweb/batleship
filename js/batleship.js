@@ -1,29 +1,35 @@
 let view = {
-    displayMessage: function (msg) {
-        let messageArea = document.getElementById("messageArea");
-        messageArea.innerHTML = msg;
-    },
+  displayMessage: function (msg) {
+    let messageArea = document.getElementById("messageArea");
+    messageArea.innerHTML = msg;
+  },
 
-    displayHit: function (location) {
-        let cell = document.getElementById(location);
-        cell.setAttribute("class", "hit border");
-    },
+  displayHit: function (location) {
+    let cell = document.getElementById(location);
+    cell.setAttribute("class", "hit border");
+  },
 
-    displayMiss: function (location) {
-        let cell = document.getElementById(location);
-        cell.setAttribute("class", "miss border");
-        },
-        resetBoard: function () {
-            let cells = document.querySelectorAll(".border");
-            cells.forEach((element) => {
-                element.removeAttribute("class");
-                element.setAttribute("class", "border");
-            });
-            let restartButton = document.getElementById("restart");
-            restartButton.setAttribute("class", "hidden");
-            this.displayMessage("Click on the grid to starting shooting my ships!");
-        },
-        };
+  displayMiss: function (location) {
+    let cell = document.getElementById(location);
+    cell.setAttribute("class", "miss border");
+  },
+  resetBoard: function () {
+    let cells = document.querySelectorAll(".border");
+    cells.forEach((element) => {
+      element.removeAttribute("class");
+      element.setAttribute("class", "border");
+    });
+    let restartButton = document.getElementById("restart");
+    restartButton.setAttribute("class", "hidden");
+    this.displayMessage("Click on the grid to starting shooting my ships!");
+  },
+  year: function () {
+      let element = document.querySelector("#year")
+      let date = new Date()
+      let year = date.getFullYear()
+      console.log(year)
+  },
+};
 
 let model = {
     boardSize: 7,
@@ -162,6 +168,7 @@ let controller = {
 };
 
 function init() {
+    view.year()
     let positions = document.querySelectorAll(".border");
     positions.forEach((element) => {
         element.addEventListener("click", () => {

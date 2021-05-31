@@ -1,6 +1,7 @@
 body{
     background-color: black;
     overflow: hidden;
+   
 }
 div#messageArea {
     color: rgb(83, 175, 19);
@@ -84,4 +85,20 @@ div#messageArea {
     .hit {
         background-size: 40px 25px;
     }
+}
+
+footer{
+position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer a{
+    display: block;
+    color: rgb(83,175,19);
+    padding-bottom: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 900;
 }
